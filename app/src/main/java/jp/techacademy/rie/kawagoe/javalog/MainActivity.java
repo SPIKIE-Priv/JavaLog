@@ -11,11 +11,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        int num = 10;
-        Log.d("javatest", String.valueOf(num));
 
-        // numに50を代入する
-        num = 50;
-        Log.d("javatest", String.valueOf(num));
+        Human human = new Human("ポチ", 3, "趣味");
+
+        human.say();
+        human.think();
     }
 }
